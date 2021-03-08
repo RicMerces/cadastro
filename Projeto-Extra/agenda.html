@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+</head>
+<body>
+
+    <style>
+        body{
+            background-color: #8331a7;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #container{
+            background-color: #fff;
+            color: #8331a7 ;
+            text-align: center;
+            align-items: center;
+            width: 1000px;
+            margin: 20px auto;
+            padding: 40px;
+        }
+
+
+        h1{
+            font-size: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+
+        table{
+            
+            width: 600px;
+            height: 100px;
+            border-collapse: separate; 
+            margin: 20px auto;
+           
+        }
+
+        thead{
+            
+            background-color: #8331a7;
+            color: #fff;
+        }
+
+        th{
+           height: 40px; 
+        }
+
+        tbody{
+            background-color: #f4f4f4;
+        }
+
+       tbody button{
+            padding: 7px;
+            border-radius: 20px;
+            width: 90px;
+            color: #f4f4f4;
+            border: white solid 1px;
+            margin: 2px;
+            font-weight: bold;
+        }
+
+
+
+        #edit{
+            background-color: #78ded4;
+        }
+
+        #excluir{
+            background-color: #fd4a5c;
+        }
+        
+        #header button{
+            border-radius: 50px;
+            padding: 15px;
+            background-color: #8331a7;
+            border: #fff;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+        #header a{
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+    </style>
+
+    <div id="container">
+        <div id="header">
+            <h1>Agenda de contatos</h1>
+            <button><a href="tabela.html" class="botao1"> Novo contato</a></button>
+        </div>
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>E-Mail</th>
+                        <th>Opções</th>
+                    </tr>
+                    
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ricardo Oliveira</td>
+                        <td>071 9920-0703</td>
+                        <td><button id="edit">Editar</button> <button id="excluir">Excluir </button> </td>
+                        
+
+                        <!-- <% for(int i = 0;i<lista.size();i++){ %>
+                        <tr>
+                            <td><%=lista.get(i).getIdcon()%></td>
+                            <td><%=lista.get(i).getNome()%></td>
+                            <td><%=lista.get(i).getFone()%></td>
+                            <td><%=lista.get(i).getEmail()%></td>
+
+                            <td><a href="select?idcon=<%=lista.get(i).getIdcon()%>" class="botao1">Editar</a></td>
+
+
+
+                            </tr>
+                            <%} %> -->
+                        
+                    </tr>
+                    
+                </tbody>
+                    
+               
+            </table>
+
+            
+
+    </div>
+</body>
+</html>

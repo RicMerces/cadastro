@@ -46,8 +46,7 @@
 <td><%=lista.get(i).getNome()%></td>
 <td><%=lista.get(i).getFone()%></td>
 <td><%=lista.get(i).getEmail()%></td>
-<!-- select? encaminhar ao documento um parametro = id -->
-<!-- Dessa forma que encaminho o numero do id pra contato que quero editar -->
+
 <td><a href="select?idcon=<%=lista.get(i).getIdcon()%>" class="botao1">Editar</a></td>
 
 
